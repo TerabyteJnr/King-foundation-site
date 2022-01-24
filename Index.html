@@ -1,0 +1,106 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>THE KINGS FOUNDATION</title>
+ 	<link rel="stylesheet" type="text/css" href="main.css">
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head>
+ <body>
+
+ 	<div class="nav">
+ 		<label for="toggle">&#9776;</label>
+ 		<input type="checkbox" id="toggle"/>
+ 		<div class="header">
+  <a href="index.html" class="logo"> THE KINGS FOUNDATIONS</a>
+ 		<div class="menu">
+ 			<a href="Index.html">Home</a>
+ 			<a href="Aims.html">Aims</a>
+ 			<a href="About Us.html">Learn More About Us</a>
+      <a href="Donate.html">Donate</a>
+ 			<a href="Form.html"><span>Sign In</span></a>
+    </div>
+    <div class="icon-bar">
+  <a href="https://www.facebook.com/THE-KINGS-FOUNDATION-1557624241002244/" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="https://twitter.com/" class="twitter"><i class="fa fa-twitter"></i></a>
+  <a href="www.mireku.kwabena448@gmail.com" class="google"><i class="fa fa-google"></i></a>
+  <a href="https://gh.linkedin.com/" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="https://www.youtube.com/" class="youtube"><i class="fa fa-youtube"></i></a>
+</div> 
+
+     <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="48412754_1883889841709014_1628125499509178368_o.jpg" style="width:100%">
+  
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="48413476_1883889811709017_5983220224529268736_o.jpg" style="width:100%">
+    
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="48418985_1883889921709006_7788534612719828992_o.jpg" style="width:100%">
+    
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="48928981_1883889888375676_6214126784577798144_o.jpg" style="width:100%">
+    
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="49108968_1883889851709013_7171016846399766528_o.jpg" style="width:100%">
+    
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div> 
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<section class="section">
+	<p><b>WELCOME TO THE KINGS FOUNDATION</b></p>
+</section>
+ </body>
+ </html> 
